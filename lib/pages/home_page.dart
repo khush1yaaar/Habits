@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
 
   Future<void> _initializeHabits() async {
     await Provider.of<HabitDatabase>(context, listen: false).readHabits();
-    setState(() {}); // Trigger a rebuild after habits are loaded
+    setState(() {}); 
   }
 
   @override
